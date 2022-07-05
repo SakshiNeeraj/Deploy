@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body bgcolor="#DBD1FC">
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			DETECTION OF FAKE NEWS USING MACHINE LEARNING
+		</div>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>ENTER THE NEWS HERE</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="news" rows="6" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>
